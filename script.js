@@ -1,46 +1,110 @@
-console.log('Задача 1:');
-
-//Задача 1. 
-var element = '#';
-for (i=0; i <= 6; i++){
-    if ( i < 1){
-        console.log(element);
-    } 
-    else {
-        element += "#";
-        console.log(element);
-    }
-}
-
-
-// "Не скучай"
-console.log("Задание: 'Не скучай':");
-for (i=0; i < 12; i++){
-    switch(i) {
-        case 0:console.log("############################");
-        break;
-        case 1:console.log("#####                 ######")
-        break;
-        case 2:console.log("##   ***                **##")
-        break;
-        case 3:console.log("#   *##**         **  O  *##")
-        break;
-        case 4:console.log("#    ***     O    ##**    *#")
-        break;
-        case 5:console.log("#       O         ##***    #")
-        break;
-        case 6:console.log("#                 ##**     #")
-        break;
-        case 7:console.log("#   O       #*             #")
-        break;
-        case 8:console.log("#*          #**       O    #")
-        break;
-        case 9:console.log("#***        ##**    O    **#")
-        break;
-        case 10:console.log("##****     ###***       *###")
-        break;
-        case 11:console.log("############################")
-        break;
-    }
-
-}
+//Странный калькулятор
+for ( ; ; ){
+    var action = prompt('Какое действие нужно выполнить ?');
+    var result = undefined;
+   switch(action){
+       case "+": for (;;){
+        var amount = +prompt('Вы планируете суммировать числа, сколько их будет ?');
+        if (typeof amount == "number" && amount > 1){
+            for (var i = 1; i < amount+1; i++){
+                    for (; ;){
+                        var number = +prompt('Укажите операнд под номером ' + i + " ?");
+                        if (typeof number == "number" && (number <= 0 || number >= 0)){
+                            if (typeof result == 'undefined') {
+                                var result = number;
+                                break
+                            } else { 
+                                result = result+number;
+                                break ;
+                            }
+                        } 
+                    }       
+            }
+            if (i == amount+1) {
+                alert('Результат вычисления: ' + result ) ;
+            }
+            break 
+        }
+       }
+       break
+       case "-": for (;;){
+        var amount = +prompt('Вы планируете вычитать числа, сколько их будет ?');
+        if (typeof amount == "number" && amount > 1){
+            for (var i = 1; i < amount+1; i++){
+                    for (; ;){
+                        var number = +prompt('Укажите операнд под номером ' + i + " ?");
+                        if (typeof number == "number" && (number <= 0 || number >= 0)){
+                            if (typeof result == 'undefined') {
+                                var result = number;
+                                break
+                            } else {
+                                result = result - number;
+                                break ;
+                            }
+                           
+                        } 
+                    }       
+            }
+            if (i == amount+1) {
+                alert('Результат вычисления: ' + result ) ;
+            }
+            break;
+        }
+       }
+       break;
+       case "*": for (;;){
+        var amount = +prompt('Вы планируете умножать числа, сколько их будет ?');
+        if (typeof amount == "number" && amount > 1){
+            
+            for (var i = 1; i < amount+1; i++){
+                    for (; ;){
+                        var number = +prompt('Укажите операнд под номером ' + i + " ?");
+                        if (typeof number == "number" && (number <= 0 || number >= 0)){
+                            if (typeof result == 'undefined') {
+                                var result = number;
+                                break
+                            } else { 
+                                result = result * number;
+                                break ;
+                            }
+                        } 
+                    }       
+            }
+            if (i == amount+1) {
+                alert('Результат вычисления: ' + result);
+            }
+            break;
+        }
+       }
+       break;
+       case "/": for (;;){
+        var amount = +prompt('Вы планируете делить числа, сколько их будет ?');
+        if (typeof amount == "number" && amount > 1){
+            
+            for (var i = 1; i < amount+1; i++){
+                    for (; ;){
+                        var number = +prompt('Укажите операнд под номером ' + i + " ?");
+                        if (typeof number == "number" && (number <= 0 || number >= 0)){
+                            if (typeof result == 'undefined') {
+                                var result = number;
+                                break
+                            } else {
+                                if ( number != 0) {
+                                    result = result / number;
+                                    break ;
+                                }
+                                
+                            }
+                           
+                        }
+                    }       
+            }
+            if (i == amount+1) {
+                alert('Результат вычисления: ' + result ) ;
+            }
+            break 
+        }
+       }
+       break
+   }
+}     
