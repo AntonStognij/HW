@@ -1,0 +1,26 @@
+body {
+    background: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db);
+}
+
+h2 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    width: 100%;
+}
+.img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+}
+
+.blok-panda {
+    width: 30%;
+    background: linear-gradient(#33CC99, transparent);
+    padding: 5px;
+    border-radius: 15px;
+}
