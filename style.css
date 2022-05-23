@@ -1,0 +1,56 @@
+body {
+    background-color: #bcf2c9 ;
+    font-family: sans-serif;
+}
+
+p {
+    font-size: 48px;
+}
+h1 {
+    margin: 0;
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-around ;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.game {
+    width: 450px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    grid-column-gap: 10px; 
+    grid-row-gap: 10px; 
+    text-align: center;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.game-blok {
+    background-color: #da70d6 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.player {
+    font-weight: 900;
+    text-align: center;
+    width: 150px;
+    padding: 25px;
+}
+
+.step {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
