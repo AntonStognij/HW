@@ -1,0 +1,14 @@
+body {
+    position: relative;
+    margin: 0;
+}
+.tank {
+    width: 200px;
+    position: absolute;
+    top: 100px;
+}
+.fire {
+    width: 10px;
+    position: absolute;
+    visibility: hidden;
+}
