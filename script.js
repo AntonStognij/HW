@@ -49,20 +49,20 @@ document.addEventListener('keydown', function (e){
         tank.style.left = leftElemTank (e.code, tank, step);
         fire.style.transform = 'rotate(270deg)'; 
         fire.style.left = tank.getBoundingClientRect().left - fire.getBoundingClientRect().width +'px'
-        fire.style.top  = tank.getBoundingClientRect().top + tank.getBoundingClientRect().height/2 - widthFire/2 + 'px' 
+        fire.style.top  = tank.getBoundingClientRect().top + tank.getBoundingClientRect().height/2 - widthFire/1.6 + 'px' 
             
     } 
       else if(e.code === "KeyS"){
         tank.style.top =  topElemTank (e.code, tank, step)
         tank.style.transform = 'rotate(270deg)';
         fire.style.transform = 'rotate(180deg)'; 
-        fire.style.left = tank.getBoundingClientRect().left + tank.getBoundingClientRect().width/2 - widthFire/1.5 +'px'
+        fire.style.left = tank.getBoundingClientRect().left + tank.getBoundingClientRect().width/2 - widthFire/1.6 +'px'
         fire.style.top  = tank.getBoundingClientRect().top+ tank.getBoundingClientRect().height + 'px' 
     } else if(e.code === "KeyW"){
         tank.style.top = topElemTank (e.code, tank, step)
         tank.style.transform = 'rotate(90deg)';
        fire.style.transform = 'rotate(0deg)'; 
-       fire.style.left = tank.getBoundingClientRect().left + tank.getBoundingClientRect().width/2 - widthFire/2  +'px'
+       fire.style.left = tank.getBoundingClientRect().left + tank.getBoundingClientRect().width/2 - widthFire/2.3  +'px'
        fire.style.top  = tank.getBoundingClientRect().top - fire.getBoundingClientRect().height  + 'px'
     }
     else if(e.code === "Space"){
