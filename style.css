@@ -1,0 +1,48 @@
+.mouse {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 85%;
+    left: 48.5%;
+}
+.cat {
+    position: absolute;
+    height: 250px;
+    /* z-index: 2; */
+    top: 40%;
+    left: 45%;
+}
+.block {
+   background:#342d34; 
+   display: inline-block;
+   margin: 45px;
+   margin-left: 0;
+}
+.wrap {
+    font-family: 'Press Start 2P', cursive;
+    height: 550px;
+    width: 98%;
+    margin: 15px auto;
+
+}
+
+body {
+    position: relative;
+    
+}
+.description {
+    text-align: center;
+}
+.time {
+    width: 70px;
+    height: 40px;
+    border: 1px solid green;
+    position: fixed;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 5px;
+    left: 15px;
+    border-radius: 15px;
+}
