@@ -4,31 +4,33 @@
     position: absolute;
     top: 85%;
     left: 48.5%;
+    z-index: 1;
 }
 .cat {
     position: absolute;
     height: 250px;
-    /* z-index: 2; */
     top: 40%;
     left: 45%;
+    z-index: 2;
 }
 .block {
    background:#342d34; 
    display: inline-block;
    margin: 45px;
    margin-left: 0;
+   position: relative;
+   z-index:3;
+   
 }
 .wrap {
     font-family: 'Press Start 2P', cursive;
     height: 550px;
     width: 98%;
     margin: 15px auto;
-
 }
 
 body {
     position: relative;
-    
 }
 .description {
     text-align: center;
@@ -42,7 +44,31 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 5px;
-    left: 15px;
+    bottom: 15px;
+    right: 15px;
     border-radius: 15px;
+}
+
+.blockEnd {
+    width: 500px;
+    position: absolute;
+    left: 30%;
+    top:15%;
+    background: rgb(255, 255, 0);
+    z-index: 4 ;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 32px;
+    border-radius: 15px;
+}
+
+.timeEnd {
+    font-weight: 700;
+    font-size: 42px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    z-index: 11;
+}
+.index {
+    z-index: 10;
 }
