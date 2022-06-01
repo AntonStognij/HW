@@ -41,7 +41,7 @@ var h2 = document.createElement('h2');
 h2.classList.add('description')
 wrap.append(h2);
 h2.innerHTML = "Не забывайте, что преград нельзя касаться. Кликай на мышь и беги!"
-
+var id = 0;
 //создаем мыщ
 var mouse = document.createElement('img');
 mouse.setAttribute('src', "img/2.png");
@@ -120,10 +120,12 @@ setTimeout(function (){
   var catHight = catElem.getBoundingClientRect().height;
   
   var setIntervalId = setInterval( function (){
+    id++;
     var randomWidth = random(50, 150);
     var randomHight = random(50, 150);
     var block = document.createElement('div');
     block.setAttribute('style', "width:"+randomWidth+"px; height:"+randomHight+"px");  
+    block.setAttribute('id', ""+id);  
     block.classList.add('block');
     wrap.append(block);
     var blockElem = document.getElementById(id)
@@ -185,6 +187,12 @@ setTimeout(function (){
     })
     }
 })
+
+
+
+
+
+
 
 
 
