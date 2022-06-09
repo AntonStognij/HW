@@ -7,7 +7,7 @@ const worker = {
     jobTitle:"",//должность 
     allowanceСoefficient:"",//повышающий коэффициент к зарплате
     getSalary: () => {
-                return Worker.rate*Worker.days //получаем зарплату
+                return worker.rate*worker.days //получаем зарплату
             }
 }
 
