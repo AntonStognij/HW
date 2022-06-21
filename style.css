@@ -47,3 +47,8 @@
 .wrap_dots .active {
     background-color :#0a0a0aff;
 }
+
+.text {
+    text-align: center;
+    margin-top: 15%;
+}
