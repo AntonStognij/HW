@@ -21,39 +21,53 @@ const render = li (slidesImg);
 //ищем элементы
 const btn = document.querySelectorAll('.btn');
 const shift = document.querySelector('.picture_list');
-console.log(shift)
 const slides = shift.querySelectorAll('li');
 const dot = document.querySelectorAll('.dots');
-console.log(dot)
 let count = 0;
 slides[count].classList.add('active')
 dot[count].classList.add('active')
 
-// переключаем слайды
 
-const onRight = () => {
-    const activeSlid = shift.querySelector('.active')
-    const activeDot = document.querySelector('.wrap_dots .active');
-    const next = activeSlid.nextElementSibling;
-    const nextDot = activeDot.nextElementSibling;
-    let width = 0
-    console. log(next)
-    if(next){
-        width = getComputedStyle(next).width
-        count++;
-        activeSlid.classList.remove('active')
-        activeDot.classList.remove('active')
-        next.classList.add('active')
-        nextDot.classList.add('active')
-    } else {
-        count = 0;
-        activeSlid.classList.remove('active')
-        slides[count].classList.add('active')
-        activeDot.classList.remove('active')
-        dot[count].classList.add('active')
+// переключаем слайды
+const movement = function (action, elemSlideActive, elemDotActive, elemNext,elemNextDot ){
+    if (action == "left"){
+        if(elemNext){
+            width = getComputedStyle(elemNext).width
+            count--;
+            elemSlideActive.classList.remove('active')
+            elemNext.classList.add('active')
+            elemDotActive.classList.remove('active')
+            elemNextDot.classList.add('active')
+        }
+         else {
+            width = getComputedStyle(elemSlideActive).width
+            count = slidesImg.length-1;
+            elemDotActive.classList.remove('active')
+            elemSlideActive.classList.remove('active')
+            dot[count].classList.add('active')
+            slides[count].classList.add('active')
+        }
+        shift.style.transform = `translateX(${-parseInt(width)* count}px)`
+        return
     }
-    shift.style.transform = `translateX(${-parseInt(width) * count}px)`
-    console.log(count)
+    if (action == "right"){
+        if(elemNext){
+            width = getComputedStyle(elemNext).width
+            count++;
+            elemSlideActive.classList.remove('active')
+            elemDotActive.classList.remove('active')
+            elemNext.classList.add('active')
+            elemNextDot.classList.add('active')
+        } else {
+            count = 0;
+            elemSlideActive.classList.remove('active')
+            slides[count].classList.add('active')
+            elemDotActive.classList.remove('active')
+            dot[count].classList.add('active')
+        }
+    } 
+    shift.style.transform = `translateX(${-parseInt(width)* count}px)`
+    return
 }
 
 
@@ -62,24 +76,16 @@ const onLeft = () => {
     const activeDot = document.querySelector('.wrap_dots .active');
     const next = activeSlid.previousElementSibling;
     const nextDot = activeDot.previousElementSibling;
-    if(next){
-        width = getComputedStyle(next).width
-            count--;
-            activeSlid.classList.remove('active')
-            next.classList.add('active')
-            activeDot.classList.remove('active')
-            nextDot.classList.add('active')
-            console.log("next есть", count)
-    }
-     else {
-        width = getComputedStyle(activeSlid).width
-        count = slidesImg.length-1;
-        activeDot.classList.remove('active')
-        activeSlid.classList.remove('active')
-        dot[count].classList.add('active')
-        slides[count].classList.add('active')
-    }
-    shift.style.transform = `translateX(${-parseInt(width)* count}px)`
+    const action = "left";
+    movement(action,activeSlid,activeDot,next,nextDot)
+}
+const onRight = () => {
+    const activeSlid = shift.querySelector('.active')
+    const activeDot = document.querySelector('.wrap_dots .active');
+    const next = activeSlid.nextElementSibling;
+    const nextDot = activeDot.nextElementSibling;
+    const action = "right"
+    movement(action,activeSlid,activeDot,next,nextDot)
 }
 
 
@@ -89,5 +95,4 @@ btn.forEach(elem => {
     } else {
         elem.addEventListener('click', onLeft)
     }
-
 })

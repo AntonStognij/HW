@@ -13,7 +13,7 @@
 
 .picture_list {
     display: flex;
-    transition: 3s;
+    transition: 1s;
     transform: translateX(0px);
 }
 
