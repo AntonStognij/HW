@@ -1,0 +1,49 @@
+*, html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap_slader {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.picture_list {
+    display: flex;
+    transition: 3s;
+    transform: translateX(0px);
+}
+
+.picture_list img {
+    width: 500px;
+}
+
+.slaler {
+    width: 500px;
+    height: auto;
+    overflow: hidden;
+}
+
+.wrap_dots {
+    display: flex;
+    justify-content: center;
+}
+
+.dots {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ff8182;
+    margin: 15px;
+}
+
+.btn {
+    font-size: 48px;
+}
+
+.wrap_dots .active {
+    background-color :#0a0a0aff;
+}
