@@ -90,7 +90,7 @@ function startGame () {
     
 }
 
-//функция ищет єлемент по класу
+//функция ищет элемент по классу
 const serchElem = (className) =>  document.querySelector(`.${className}`)
 
 //Функция удадяет изменяет картинку в блоке 
