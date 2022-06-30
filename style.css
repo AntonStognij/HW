@@ -1,0 +1,11 @@
+body {
+    font-family: cursive;
+    background: rgb(235, 249, 159);
+}
+.btn_done {
+    margin-left: 15px;
+}
+li {
+    margin: 15px;
+    font-family: system-ui;
+}
