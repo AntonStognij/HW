@@ -1,4 +1,4 @@
-//функция создает єлемент html
+//функция создает элемент html
 function createElem (type, className, perent, dataId = null, typeInput = null, value = null ){
     let elem = document.createElement(`${type}`);
     elem.setAttribute("class", `${className}`);
