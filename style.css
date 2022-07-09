@@ -41,7 +41,7 @@
     justify-content: center;
     align-items: center;
     background: rgb(234, 225, 225);
-    width: 87%;
+    width: 930px;
     height: 87%;
     border: 1px solid  rgb(32, 32, 32);
     font-size: 32px;
@@ -103,19 +103,19 @@
 }
 
 .result-dino .head1 {
-    top: 1%;
-    left: 5%; 
+    top: 0.3%;
+    left: 6%; 
     width: 80px;
 }
 .result-dino .head2 {
-    top:0.5%;
+    top:-0.2%;
     left: 5%; 
     width: 80px;
 }
 
 .result-dino .head3 {
-    top:-5%;
-    left: 5%; 
+    top:-6%;
+    left: 6%; 
     width: 80px;
 }
 
@@ -136,7 +136,40 @@
 }
 
 .result-dino .spots1 {
-    top: 15%;
+    top: 11%;
     left: 14%; 
-    width: 78%;
+    width: 79%;
+}
+
+.result-dino .spots2 {
+    top: 20.1%;
+    left: 16%; 
+    width: 73%;
+}
+.result-dino .spots3 {
+    top: 16.5%;
+    left: 15%; 
+    width: 80%;
+}
+.result-dino .spots4 {
+    top: 33.4%;
+    left: 22.5%; 
+    width: 63%;
+}
+
+.result-dino .scale1 {
+    width: 80%; 
+    left: 13%; 
+    top: 6.7%;
+}
+.result-dino .scale2 {
+    width: 76%; 
+    left: 15%; 
+    top: 8.1%;
+}
+
+.result-dino .scale3 {
+    width: 78%; 
+    left: 15%; 
+    top: 8.4%;
 }
