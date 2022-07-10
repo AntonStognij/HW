@@ -98,6 +98,7 @@ const dinoOpion = {
             this.addElem("choice-main", this.createBtn("img" + i, this.icons[i], i))
             this.addElem("choice-details", this.createElem("div", " btn not-border choice-details" + i + ""))
         }
+        
         this.addImgWithArrinBtn(this.dino, "choice-details", "img-btn hidden dino dino")
         this.addImgWithArrinBtn(this.eyes, "choice-details", "img-btn hidden eyes eyes")
         this.addImgWithArrinBtn(this.head, "choice-details", "img-btn hidden head head")

@@ -41,8 +41,8 @@
     justify-content: center;
     align-items: center;
     background: rgb(234, 225, 225);
-    width: 930px;
-    height: 87%;
+    width: 750px;
+    height: 600px;
     border: 1px solid  rgb(32, 32, 32);
     font-size: 32px;
     position: relative;
@@ -96,80 +96,107 @@
 .click {
     border-right: rgb(111, 102, 102);
 }
+.result-dino .dino1 {
+    height: 450px; 
+}
+.result-dino .dino2 {
+    height: 450px; 
+}
+.result-dino .dino3 {
+    height: 450px; 
+}
+.result-dino .dino4 {
+    height: 450px; 
+}
+
+.result-dino .dino5 {
+    height: 450px; 
+}
+.result-dino .dino6 {
+    height: 450px; 
+}
 
 .eyes1 , .eyes2, .eyes3, .eyes4 {
-    top:7%;
-    left: 8%;
+    top:85px;
+    left: 55px;
 }
 
 .result-dino .head1 {
-    top: 0.3%;
-    left: 6%; 
+    top: 45px;
+    left:40px; 
     width: 80px;
 }
 .result-dino .head2 {
-    top:-0.2%;
-    left: 5%; 
+    top:45px;
+    left:35px; 
     width: 80px;
 }
 
 .result-dino .head3 {
-    top:-6%;
-    left: 6%; 
+    top: 15px;
+    left:35px; 
     width: 80px;
 }
 
 .result-dino .mouth1 {
-    top: 13%;
-    left: 5%; 
-    width: 3%;
+    top: 110px;
+    left:37px; 
+    width: 20px;
 }
 .result-dino .mouth2 {
-    top: 13%;
-    left: 5%; 
-    width: 3%;
+    top: 110px;
+    left:37px; 
+    width: 20px;
 }
 .result-dino .mouth3 {
-    top: 12%;
-    left: 5%; 
-    width: 2%;
+    top: 110px;
+    left:35px; 
+    width: 16px;
 }
 
 .result-dino .spots1 {
-    top: 11%;
-    left: 14%; 
-    width: 79%;
+    top: 103px;
+    left: 102px ;
+    width: 595px;
+    height: 358px;
 }
 
 .result-dino .spots2 {
-    top: 20.1%;
-    left: 16%; 
-    width: 73%;
+    top: 145px;
+    left: 115px ;
+    width: 560px;
+    height: 370px;
 }
+
 .result-dino .spots3 {
-    top: 16.5%;
-    left: 15%; 
-    width: 80%;
+    top: 133px;
+    left: 112px ;
+    width: 599px;
+    height: 385px;
 }
 .result-dino .spots4 {
-    top: 33.4%;
-    left: 22.5%; 
-    width: 63%;
+    top: 220px;
+    left: 170px ;
+    width: 471px;
+    height: 285px;
 }
 
 .result-dino .scale1 {
-    width: 80%; 
-    left: 13%; 
-    top: 6.7%;
+    width: 600px;
+    height: 380px;
+    left: 100px ;
+    top: 80px;
 }
 .result-dino .scale2 {
-    width: 76%; 
-    left: 15%; 
-    top: 8.1%;
+    width: 590px;
+    height: 380px;
+    left: 110px ;
+    top: 80px;
 }
 
 .result-dino .scale3 {
-    width: 78%; 
-    left: 15%; 
-    top: 8.4%;
+    width: 590px;
+    height: 380px;
+    left: 110px ;
+    top: 83px;
 }
