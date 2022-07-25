@@ -70,7 +70,6 @@ fetch(`${url}`, {
     const name = []
     const rating = []
     let trTable  = ''
-    console.log(students)
     students.forEach(element => {
     element.date_of_birth = moment(element.date_of_birth, "DD-MM-YYYY")
     element.date_of_birth = moment(element.date_of_birth).format('DD/MM/YYYY');
@@ -97,7 +96,6 @@ fetch(`${url}`, {
 </div>`
 
 let divTable = document.querySelector('.table');
-console.log (divTable)
 divTable.innerHTML = table
 //делаю MDCDataTable
 const dataTable = new MDCDataTable(document.querySelector('.mdc-data-table'));
