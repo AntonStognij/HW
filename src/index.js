@@ -97,7 +97,6 @@ fetch(`${url}`, {
 
 let divTable = document.querySelector('.table');
 divTable.innerHTML = table
-//делаю MDCDataTable
 const dataTable = new MDCDataTable(document.querySelector('.mdc-data-table'));
 const ctx = document.getElementById('myChart');
 const labels = name;
