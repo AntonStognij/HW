@@ -33,16 +33,9 @@ module.exports = {
                     production ? miniCss.loader : 'style-loader',
                     {
                         loader: 'css-loader',
-                        options: {
-                            modules: true,
-                            sourceMap: !production
-                        }
                     },
                     {
                         loader: 'sass-loader',
-                        options: {
-                            sourceMap: !production
-                        }
                     }
                 ]
             },
