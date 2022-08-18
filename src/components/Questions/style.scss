@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'Inter';
+    src: url("/src/fonts/Inter-Bold.ttf");
+    
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url("/src/fonts/Inter-SemiBold.ttf");
+}
+
+.questionsWrap{
+    position: relative;
+    margin-top: 450px;
+}
+.questionsFild{
+    position: absolute;
+    top: -225px;
+    left: 9%;
+    width: 1140px;
+    margin: 0 auto;
+    height: 533px;
+    background-image: url("/src/img/BG.png");
+    background-size: 100% 100%;
+    height: 533px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    
+   .telImg{
+    width: 496.97px;
+    position: absolute;
+    top: -23%;
+    left:50%;
+    z-index: 0;
+   }
+
+   .questions{
+   width: 576px;
+    z-index: 10;
+    padding-left: 15%;
+    width:65%;
+    .h4Questions{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 120%;
+        color: #FFFFFF;
+    }
+    .pQuestions{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 26px;
+        line-height: 150%;
+        color: #FFFFFF;
+        margin-bottom: 29px;
+    }
+   }
+
+   .fild{
+    z-index: 10;
+    display: flex;
+    width: 1140px;
+    padding-left: 15%;
+   
+    
+    .fildInput{
+    justify-content: space-evenly;
+    padding: 14px 26px 15px 36px;
+    gap: 10px;
+    width: 290px;
+    height: 60px;
+    left: 371px;
+    bottom: 838px;
+    background: #576077;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 6px 16px rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    color: #FFFFFF;
+    margin-right: 10px;
+    }
+    .btnInput{
+        width: 280px;
+        height: 60px;
+        gap: 10px;
+        left: 1249px;
+        bottom: 838px;
+        background: #0074D4;
+        box-shadow: 0px 43px 51px rgba(0, 116, 212, 0.2), 0px 12.9632px 15.375px rgba(0, 116, 212, 0.241), 0px 5.38427px 6.38599px rgba(0, 116, 212, 0.15), 0px 1.94738px 2.30969px rgba(0, 116, 212, 0.059);
+        border-radius: 8px;
+        border: none;
+        &:hover{
+            background: #37A5FF;
+
+        }
+    }
+   }
+}
+
+.map {
+    width: 100%;
+}

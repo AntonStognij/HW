@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'Inter';
+    src: url("/src/fonts/Inter-Bold.ttf");
+    
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url("/src/fonts/Inter-Regular.ttf");
+}
+
+
+.blockDescription{
+    background-image: url('/src/img/Rectangle.png');
+    padding-top: 30px;
+    margin-bottom: 70px;
+}
+
+.elDescription {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-image: url('/src/img/pek.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+    width: 1140px;
+    margin: 0 auto;
+    margin-top: 90px;
+    
+}
+
+.elem {
+    width: 35%;
+    text-align: left;
+    // margin-top: ;
+    .h4elemDescription{
+        margin-bottom: 3px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 140%;
+        color: #2B3350;
+        opacity: 0.5;
+    }
+    .pelemDescription{
+        margin-bottom: 23px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 160%;
+        color: #576077;
+        opacity: 0.5;
+       
+    }
+}
+
+
+
+.descriptionElem{
+    text-align: center;
+    
+    .h3descriptionWrap{
+        margin-top: 94px;
+        margin-bottom: 14px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 120%;
+        color: #2B3350;
+    }
+    .pdescriptionWrap{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 160%;
+        text-align: center;
+        color: #576077;
+        width: 1140px;
+        margin: 0 auto;
+    }
+}

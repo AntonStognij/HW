@@ -1,0 +1,17 @@
+
+*, html, body{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Inter";
+}
+
+a {
+    &:hover{
+        color: #7BEC6D;
+        font-weight: bold;
+        transition: 0.5s;
+    }
+}

@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'Inter';
+    src: url("/src/fonts/Inter-Bold.ttf");
+    
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url("/src/fonts/Inter-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url("/src/fonts/Inter-Medium.ttf");
+}
+.footer{
+    background: #191E32;
+    height: 254px;
+    width: 100%;
+}
+
+
+.blockFooter{
+    display: flex;
+    width: 1140px;
+    margin: 0 auto;
+    justify-content: space-between;
+    a {color: #959AAE;
+    font-family: 'Inter';
+    }
+    svg {
+        color: #959AAE; 
+    }
+    .elemLeft , .elemCentr , .elemRight{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 64px;
+        justify-content: space-around;
+    }
+    .elemLeft li {
+        padding-bottom: 6px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+        color: #959AAE;
+        position: relative;
+        .spanLogo{
+            position: absolute;
+            left: 16%;
+            top :65%;
+        }
+    }
+    .elemCentr li {
+        padding-bottom: 10px;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 140%;
+        color: #E7EAEF;
+    }
+    .elemRight li {
+        padding-bottom: 16px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 140%;
+        color: #E7EAEF;
+    }
+    .telFooter{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 140%;
+        color: #E7EAEF;
+    }
+}

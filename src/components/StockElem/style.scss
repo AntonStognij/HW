@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Inter';
+    src: url("/src/fonts/Inter-Regular.ttf");
+}
+@font-face {
+    font-family: 'Manrope';
+    src: url("/src/fonts/Manrope-Regular.ttf");
+}
+
+.blockStockElem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    .imgStock {
+        margin-bottom: 18px;
+    }
+    .StockText {
+        margin-bottom: 13px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 150%;
+        color: #2B3350;
+    }
+    .StockTextLittle{
+        font-family: 'Manrope';
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 150%;
+        color: #959AAE;
+    }
+}
