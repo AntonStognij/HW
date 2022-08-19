@@ -1,15 +1,15 @@
 import './style.scss'
 import info from '../../info.js'
-import { createElem, createUl } from "helper/helper.js";
+import { createElem, createElemNew, createUlElem } from "helper/helper.js";
 
-const Footer  = (perent) => {
-    createElem("footer", perent, null, null, "footer")
-    let footer = document.querySelector(".footer")
-    createElem("div", footer, null, null, "blockFooter")
-    let blockFooter = document.querySelector(".blockFooter")
-    createUl (info.footer.arrLeft, blockFooter, "elemLeft", "elemLeftLi", "elemLeftA")
-    createUl (info.footer.arrCentr, blockFooter, "elemCentr", "elemCentrLi", "elemCentrA")
-    createUl (info.footer.arrRight, blockFooter, "elemRight", "elemRightLi", "elemRightA")
+
+const Footer  = () => {
+    const footer = createElemNew("div", null, null,"footer")
+    let blockFooter = createElem("div", footer, null, null, "blockFooter")
+    createUlElem (info.footer.arrLeft, blockFooter, "elemLeft", "elemLeftLi", "elemLeftA")
+    createUlElem (info.footer.arrCentr, blockFooter, "elemCentr", "elemCentrLi", "elemCentrA")
+    createUlElem (info.footer.arrRight, blockFooter, "elemRight", "elemRightLi", "elemRightA")
+    return footer
 }
 
 export default Footer

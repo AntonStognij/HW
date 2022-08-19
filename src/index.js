@@ -1,7 +1,15 @@
 import './styles/all'
-import Heder from './components/Header'
-import Main from './components/Main'
+import Render from './components/Render'
+import {showCatalog} from "./helper/route"
 
-Heder()
-Main()
+const root = document.getElementById('root')
+Render(root)
+
+const btnCatalog = document.querySelector(".buttonCatalog")
+btnCatalog.onclick = showCatalog
+
+
+
+
+
 

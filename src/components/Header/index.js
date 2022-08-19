@@ -1,28 +1,24 @@
 import './style.scss'
 import info from '../../info.js'
-import { createElem, createUl } from "helper/helper.js";
-
+import { createElem, createUl, createElemNew } from "helper/helper.js";
 const Heder = () => {
-    let root = document.getElementById('root')
-    let blockHeder = createElem ('header', root, null, null, "heder")
-    let blockHederElem = document.querySelector('.heder')
-    let blockInHeder = createElem ('div', blockHederElem, null, null, "blockHeder")
-    let blockInHederBotton = createElem ('div', blockHederElem, null, null, "blockHederBotton")
-    let blockInHederElem = document.querySelector('.blockHeder')
-    let blockInHederBottonElem = document.querySelector('.blockHederBotton');
- blockInHederBottonElem.innerHTML = `
+    const blockHederElem = createElemNew('header', null, null, "heder")
+    let blockInHederElem = createElem ('div', blockHederElem, null, null, "blockHeder")
+    let blockInHederBottonElem = createElem ('div', blockHederElem, null, null, "blockHederBotton")
+    blockInHederBottonElem.innerHTML = `
  <div class="blockHederBottonLeftElem">
-    <button class="buttonCatalog">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M3 12H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M3 6H17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M3 18H12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <span class = 'testBtn'> Каталог
-        </span>
+ <button class="buttonCatalog">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 12H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M3 6H17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M3 18H12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+      <span class="testBtn"> Каталог</span>
     </button>
+    ${createUl(info.arrLeft, "ulLeft", "liLeft", "aLeft")}
 </div>
 <div class="blockHederBottonRightElem">
+${createUl(info.arrRight, "ulRight", "liRight", "aRight")}
 </div>`
     
 blockInHederElem.innerHTML = `
@@ -50,10 +46,8 @@ blockInHederElem.innerHTML = `
 </div>
 <button class="button">${info.textButton}</button> 
 </div>`
-    let leftElem = document.querySelector('.blockHederBottonLeftElem');
-    let rigttElem = document.querySelector('.blockHederBottonRightElem');
-    createUl(info.arrLeft,leftElem, "ulLeft", "liLeft", "aLeft")
-    createUl(info.arrRight,rigttElem, "ulRight", "liRight", "aRight")
-}
+
+    return blockHederElem
+ }
 
 export default Heder

@@ -1,3 +1,15 @@
+import Catalog from "../components/Catalog/index";
+
+
+const showCatalog = () =>{
+    let main = document.querySelector(".main")
+    main.innerHTML = ""
+    main.append(Catalog())
+}
+
+export {showCatalog}
+
+
 // import Home from "views/Home"
 // import ErrorPage from "views/ErrorPage"
 // import About from "views/About";

@@ -22,6 +22,32 @@ const createElem = (tag, append, src = null, text = null, className = null, data
     }
     
     append.append(elem)
+    return elem
+}
+
+
+//функция делает элементы
+const createElemNew = (tag, src = null, text = null, className = null, dataAtr=null, href = null) => {
+    let elem = document.createElement(tag)
+    if(src){
+        elem.src = src
+        elem.alt = text
+        elem.title = text
+    }
+    if(!src && text){
+        elem.innerHTML = text
+    }
+    if(className){
+        elem.setAttribute("class", `${className}`)
+    }
+    if(dataAtr){
+        elem.setAttribute("data-id", `${dataAtr}`)
+    }
+    if(href){
+        elem.setAttribute("href", `${href}`)
+        elem.innerHTML = text
+    }
+    return elem
 }
 //функция делает поле для ввода
 const createInput  = (labelText=null, id=null, perent) =>{
@@ -38,14 +64,38 @@ const createInput  = (labelText=null, id=null, perent) =>{
     formElem.append(input)
 }
 
-
-//функция делает li с массива
-const createUl  = (arr, perent, classNameUl, classNameLi, classNameLiA) =>{
-    let ul = createElem("ul", perent, null, null, classNameUl)
-    let ulElem = document.querySelector(`.${classNameUl}`);
+const createUl  = (arr, classNameUl, classNameLi, classNameLiA) =>{
+    let li = ""
 arr.forEach(element => {
     let a = `<a href="#" class="${classNameLiA}">${element}</a>`
-    createElem("li", ulElem, null, a, classNameLi)
+    li = li + `<li class ="${classNameLi}">${a}</li>`
 });
+let ul = `<ul class = "${classNameUl}">${li}</ul>`
+return ul
 }
-export { createElem, createInput, createUl};
+
+//функция делает ul елементом
+const createUlElem  = (arr, perent, classNameUl, classNameLi, classNameLiA, route = false) =>{
+    console.log("arr => ", arr)
+    if(route) {
+        let ul = createElem("ul", perent, null, null, classNameUl)
+        arr.forEach(el => {
+        let a = `<a href="${el.url}" class="${classNameLiA}">${el.text}</a>`
+        createElem("li", ul, null, a, classNameLi)
+        console.log("el", el)
+})
+    } else {
+        let ul = createElem("ul", perent, null, null, classNameUl)
+        arr.forEach(element => {
+            let a = `<a href="#" class="${classNameLiA}">${element}</a>`
+            createElem("li", ul, null, a, classNameLi)
+        });
+    }
+   
+}
+
+
+
+
+
+export { createElem, createInput, createElemNew, createUl, createUlElem};

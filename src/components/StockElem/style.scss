@@ -7,6 +7,13 @@
     src: url("/src/fonts/Manrope-Regular.ttf");
 }
 
+.stock {
+    display: flex;
+    width: 1140px;
+    margin: 0 auto;
+    justify-content: space-between
+}
+
 .blockStockElem {
     display: flex;
     flex-direction: column;

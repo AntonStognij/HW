@@ -1,170 +1,52 @@
-
-@font-face {
-    font-family: 'Inter';
-    src: url("/src/fonts/Inter-Bold.ttf");
-}
 @font-face {
     font-family: 'Inter';
     src: url("/src/fonts/Inter-Regular.ttf");
 }
-.blockCatalog {
+
+.blockUlCatalog{
+    margin-top: 75px;
+    
+}
+
+.linkLocation {
+    display: flex;
     width: 1140px;
     margin: 0 auto;
-    margin-top: 94px;
-    .buttonShowAll{
-        padding: 24px 30px 26px;
-        gap: 10px;
-        width: 1172px;
-        height: 73px;
-        background: #F3F4F7;
-        border-radius: 8px;
-        border: none;
-        margin-top: 60px;
-        margin-bottom: 108px;
-        &:hover {
-            background: #CED2DA;
-            transition: 0.5s ;
-        }
-    }
-}
-.blockArmchair {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.elemArmchair {
-    padding: 3px;
-    width: 281px;
-    text-align: center;
-    .img{
-        margin-bottom: 51px;
-    }
-    .name{
-        margin-bottom: 3px;
+   
+    :nth-child(n) {
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
-        font-size: 20px;
-        line-height: 130%;
-        text-align: center;
-        color: #2B3350;
-        
-    }
-    .price{
-        margin-bottom: 14px;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 900;
-        font-size: 28px;
-        line-height: 140%;
-        text-align: center;
-        letter-spacing: -0.05em;
-        color: #2B3350;
-
-    }
-    .priceOld{
-        margin-bottom: 30px;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 140%;
-        text-align: center;
-        letter-spacing: -0.05em;
-        color: #2B3350;
-    }
-    .button {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 26px 38px 30px;
-        gap: 10px;
-        width: 236px;
-        height: 63px;
-        background: #0074D4;
-        box-shadow: 0px 43px 51px rgba(0, 116, 212, 0.2), 0px 12.9632px 15.375px rgba(0, 116, 212, 0.241), 0px 5.38427px 6.38599px rgba(0, 116, 212, 0.15), 0px 1.94738px 2.30969px rgba(0, 116, 212, 0.059);
-        border-radius: 8px;
-        border: none;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 140%;
-        color: #FFFFFF;
-        opacity: 0;
-        margin-bottom: 30px;
-        &:hover{
-            background: #37A5FF;
-            transition: 0.5s;
-        }
-    }
-    .line{
-        position: absolute;
-        top: 78%;
-}}
-
-.active {
-    background: #FFFFFF;
-    border: 1px solid #F3F4F7;
-    box-shadow: 0px 20px 52px -8px rgba(0, 0, 0, 0.15);
-    border-radius: 16px;
-    .button{
-        opacity: 1;
-        transition: opacity 1s;
-    }
-}
-.elemArmchair{
-display: flex;
-flex-direction: column;
-align-items: center;
-position: relative;
-}
-.filter {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 21px;
-    .elemCatalog {
-        position: relative;
-    }
-    select {
-        width: 281px;
-        height: 65px;
-        padding: 20px 30px 20px 30px;
-        border-radius: 8px;
-        border: #959AAE solid 1px;
-        
-    }
-    .tittle {
-        background:white;
-        position: absolute;
-        top: -15px;
-        left: 10px;
-        padding: 6px;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
+        font-size: 15px;
+        line-height: 150%;
         color: #959AAE;
+        &:hover {
+            color: #576077;
+        }
+        ::after{
+            content: ">";
+            margin-left: 5px;
+            margin-right: 5px;
+        }
     }
-    .filterCatalog {
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 22px;
-        color: #2B3350;
+    :last-child{
+        ::after{
+            content: "";
+        }
+    }
+    a {
+        display: block;
     }
 }
 
-.h3Catalog {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 120%;
-    color: #2B3350;
-    text-align: center;
-    margin-bottom: 35px;
+.h3CatalogBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.spanCatalogFilter{
+    margin-bottom: 25px;
+   border: none;
+    
 }
