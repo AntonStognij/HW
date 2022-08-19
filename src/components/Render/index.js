@@ -7,7 +7,7 @@ const Render = (perent) => {
     perent.append(Heder())
     perent.append(MainRender())
     perent.append(Footer())
-    perent.append(Card("1"))
+    // perent.append(Card("1"))
 }
 
 export default Render

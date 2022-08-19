@@ -1,4 +1,5 @@
 import Catalog from "../components/Catalog/index";
+import CardPage from "../components/CardPage/index"
 
 
 const showCatalog = () =>{
@@ -7,7 +8,14 @@ const showCatalog = () =>{
     main.append(Catalog())
 }
 
-export {showCatalog}
+const showCard = (elem) =>{
+    const id = elem.getAttribute("data-id")
+    let main = document.querySelector(".main")
+    main.innerHTML = ""
+    main.append(CardPage(id))
+}
+
+export {showCatalog, showCard}
 
 
 // import Home from "views/Home"

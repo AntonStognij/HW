@@ -1,6 +1,7 @@
 import './style.scss'
 import info from '../../info.js'
 import { createElem, createElemNew } from "helper/helper.js";
+import {showCard} from "helper/route.js"
 
 const Catalog = (arr= null, arrArm, isFilter = null) => {
     const catalogBlock = createElemNew("div", null, null,"blockCatalog")
@@ -10,7 +11,6 @@ const Catalog = (arr= null, arrArm, isFilter = null) => {
         let spanCatalogFilter = createElem("select", h3CatalogBlock, null, null, "spanCatalogFilter")
         createElem("option", spanCatalogFilter, null, info.catalog.filrerText, "spanCatalogFilter")
     }
-    //info.catalog.filrerText
     let filter = createElem("div", catalogBlock, null, null, "filter")
     arr.forEach(function (element, i) {
         let option = ""
@@ -31,6 +31,14 @@ const Catalog = (arr= null, arrArm, isFilter = null) => {
         })
         armchair.addEventListener("mouseout", function(event){
             armchair.classList.remove("active")
+        })
+        armchair.addEventListener("click", function(event){
+            var elem = event.target;
+            var check = elem.matches('.button');
+            if(!check) {
+                showCard(elem.parentNode)
+            }
+            
         })
         armchair.innerHTML = `
         <img src="${elem.img}" alt="img" class="img"> 

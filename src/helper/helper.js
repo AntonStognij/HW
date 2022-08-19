@@ -81,7 +81,6 @@ const createUlElem  = (arr, perent, classNameUl, classNameLi, classNameLiA, rout
         arr.forEach(el => {
         let a = `<a href="${el.url}" class="${classNameLiA}">${el.text}</a>`
         createElem("li", ul, null, a, classNameLi)
-        console.log("el", el)
 })
     } else {
         let ul = createElem("ul", perent, null, null, classNameUl)
@@ -95,9 +94,11 @@ const createUlElem  = (arr, perent, classNameUl, classNameLi, classNameLiA, rout
 
 //функция ищет элемент в массиве
 const serchElem = (id,arr) =>{
+    console.log("arr",arr)
     for(let i =0; i <= arr.length; i++) {
+        
         if (arr[i]?.id){
-            if(arr[i].id = id){
+            if(arr[i].id == id){
                 return arr[i]
             }
         }

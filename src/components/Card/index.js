@@ -1,22 +1,23 @@
 import './style.scss'
 import info from '../../info.js'
 import { createElem, createElemNew, createUlElem, serchElem } from "helper/helper.js";
-import Catalog from '../CatalogBlock/index'
-import Questions from "../Questions/index"
+
 //const createElemNew = (tag, src = null, text = null, className = null, dataAtr=null, href = null)
 //createElem = (tag, append, src = null, text = null, className = null, dataAtr=null, href = null)
 const Card = (id) => {
-   const armchair = serchElem(id, info.catalog.armchair)
+   const arrArmchair = info.catalog.armchair;
+   const armchair = serchElem(id, arrArmchair)
    const card = createElemNew("div", null, null, "card")
-const elemArr = {
-    text:armchair.name,
-    url:"#"
+   const elemArr = {
+   text:armchair.name,
+   url:"#"
 }
+
+console.log( "armchair",armchair)
+//    info.catalog.ulCatalog.splice(2,info.catalog.ulCatalog.length)
    info.catalog.ulCatalog.push(elemArr);
    const arr = info.catalog.ulCatalog
-//    console.log("arr",arr)
    createUlElem(arr, card, "linkLocation", "linkLocationLi", "linkLocationA", true)
-   
    const blockCard = createElem("div",card, null, null, "blockCard")
    const blockCardImg = createElem("div", blockCard, null, null, "blockCardImg")
    createElem("img", blockCardImg, armchair.img, null, "CardImg")
@@ -44,8 +45,6 @@ const elemArr = {
    const deskription = createElem("div",card, null, null, "deskription")
    const deskriptionLeft = createElem("div",deskription, null, null, "deskriptionLeft")
    const deskriptionRight = createElem("div",deskription, null, null, "deskriptionRight")
-   const deskriptionLeftH4 = createElem("h4",deskriptionLeft, null, "Описание товара", "deskriptionLeft")
-   const deskriptionLeftP = createElem("p",deskriptionLeft, null, "Описание товара", "deskriptionLeft")
     return card
   
   
