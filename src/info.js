@@ -37,7 +37,7 @@
         "srs":"/assets/images/discount.png",
         "text":"<p class = 'StockText'> Для юридических лиц действуют <strong>особые условия</strong></p>",
         "textLittle":"Узнать подробнее"
-    },],
+    },], 
     "catalog":{
         textH3 :"Каталог кресел",
         filrerText:"По возрастанию цены",
@@ -235,7 +235,7 @@
                 id:"6",
                 img:"/assets/images/arm.png",
                 line:"/assets/images/LinePrice.png",
-                name:"Samurai KL-1.04 кресло 6",
+                name:"Samurai KL-1.04 кресло 6 ТОП за свои деньги",
                 price:"23 000 ₽",
                 oldPrice:"27 000 ₽",
                 textBtn:"Добавить в корзину",
@@ -269,7 +269,7 @@
                 id:"7",
                 img:"/assets/images/arm.png",
                 line:"/assets/images/LinePrice.png",
-                name:"Samurai KL-1.04 777",
+                name:"Samurai KL-1.04 777 супер-пупер",
                 price:"23 000 ₽",
                 oldPrice:"27 000 ₽",
                 textBtn:"Добавить в корзину",

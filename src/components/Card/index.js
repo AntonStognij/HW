@@ -12,9 +12,6 @@ const Card = (id) => {
    text:armchair.name,
    url:"#"
 }
-
-console.log( "armchair",armchair)
-//    info.catalog.ulCatalog.splice(2,info.catalog.ulCatalog.length)
    info.catalog.ulCatalog.push(elemArr);
    const arr = info.catalog.ulCatalog
    createUlElem(arr, card, "linkLocation", "linkLocationLi", "linkLocationA", true)

@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Inter';
+    src: url("/src/fonts/Inter-Regular.ttf");
+}
+
+.orderBlock {
+    width: 1140px;
+    padding-left: 15%;
+    .order {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .blockOrderPrice{
+            margin-right: 46px;
+        }
+    }
+    .buttonDel{
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        border: none;
+        font-size: 24px;
+        margin-right: 12px;
+        color: black;
+        &:hover {
+            background: #959AAE;
+            transition: 1s;
+        }
+    }
+    .buttonAdd{
+        margin-right: 41px;
+    }
+    .blockOrderBtn {
+        display: flex;
+        align-items: center;
+    }
+    .spanPrice{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 140%;
+        letter-spacing: -0.05em;
+        color: #2B3350;
+    }
+    
+
+    .oldPrice{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 140%;
+        letter-spacing: -0.05em;
+        color: #2B3350;
+        text-align: center;
+    }
+
+    .priceOldLine{
+        width: 85px;
+    }
+    .blockOrderText{
+        width: 334px;
+        margin-right: 57px;
+    }
+
+    
+    .orderImg {
+        width: 107px;
+        height: 130px;
+        margin-right: 19px;
+    }
+
+    .blockOrderTextH4{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 130%;
+        color: #2B3350;
+    }
+    .blockOrderTextP{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        color: #959AAE;
+    }
+}
+
