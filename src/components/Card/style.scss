@@ -1,0 +1,158 @@
+
+@font-face {
+    font-family: 'Inter';
+    src: url("/src/fonts/Inter-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url("/src/fonts/Inter-Regular.ttf");
+}
+
+.card{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+
+.blockCard {
+    display: flex;
+   margin-top: 26px;
+    justify-content: space-between;
+    .blockCardDeskription{
+        display: flex;
+        flex-direction: column;
+        width: 47%;
+    }
+    .blockCardImg{
+        background: #FFFFFF;
+        border: 1px solid #E7EAEF;
+        border-radius: 16px;
+        width: 47%;
+        .CardImg{
+            width: 100%;
+        }
+    }
+}
+
+.blockCardDeskriptionBlockOpt{
+    display: flex;
+    margin-bottom: 24px;
+    .blocOpt{
+        margin-left: 8px;
+    }
+    .blocOptH4{
+        margin-bottom: 6px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 150%;
+        color: #959AAE;
+    }
+}
+
+.blockCardDeskriptionH3{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    color: #2B3350;
+    margin-bottom: 8px;
+}
+
+.h4Opt{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    color: #959AAE;
+    margin-bottom: 1px;
+}
+
+.mechanism{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #576077;
+    margin-bottom: 24px;
+}
+
+.blockCardDeskriptionP{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #576077;
+    margin-bottom: 21px;
+}
+
+.blockoldPrice{
+    position: relative;
+    .priceOldLine{
+        position: absolute;
+        width: 130px;
+        top: 13px;
+    }
+    .oldPrice{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 120%;
+        display: flex;
+        align-items: center;
+        letter-spacing: -0.05em;
+        color: #2B3350;
+    }
+}
+
+.Price{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 900;
+font-size: 38px;
+line-height: 120%;
+color: #2B3350;
+margin-bottom: 24px;
+}
+
+.blocOptBtn{
+    display: flex;
+    align-items: baseline;
+}
+
+.btnCard {
+        opacity: 1;
+        margin-right: 19px;
+    }
+
+.buttonІubtract, .buttonAdd {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        border: none;
+        font-size: 24px;
+        margin-right: 12px;
+        color: black;
+        &:hover {
+            background: #959AAE;
+            transition: 1s;
+        }
+}
+
+.spanCount{
+    margin-right:12px;
+}
+.linkLocation{
+    margin-bottom: 26px;
+}
+
+
+
+

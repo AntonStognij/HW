@@ -67,7 +67,32 @@
                 name:"Samurai KL-1.04 Темно-коричневый",
                 price:"23 000 ₽",
                 oldPrice:"27 000 ₽",
-                textBtn:"Добавить в корзину"
+                textBtn:"Добавить в корзину",
+                description:"Эргономичное офисное кресло с синхромеханизмом качания «MultiBlock» — раздельное синхронное отклонение спинки и сиденья кресла.",
+                mechanism:"Эргономичное офисное кресло с синхромеханизмом качания «MultiBlock» — раздельное синхронное.",
+                options:[
+                    {
+                        url:"/assets/images/black.png",
+                        text:"Черный"
+                
+                    },
+                    {
+                        url:"/assets/images/blue.png",
+                        text:"Синий"
+                
+                    },
+                    {
+                        url:"/assets/images/red.png",
+                        text:"Красный"
+                
+                    }
+                    ,
+                    {
+                        url:"/assets/images/green.png",
+                        text:"Зеленый"
+                
+                    }
+                ]
             },
             {
                 id:"2",
@@ -76,7 +101,32 @@
                 name:"Samurai KL-1.04 Темно-коричневый",
                 price:"23 000 ₽",
                 oldPrice:"27 000 ₽",
-                textBtn:"Добавить в корзину"
+                textBtn:"Добавить в корзину",
+                description:"Эргономичное офисное кресло с синхромеханизмом качания «MultiBlock» — раздельное синхронное отклонение спинки и сиденья кресла.",
+                mechanism:"Эргономичное офисное кресло с синхромеханизмом качания «MultiBlock» — раздельное синхронное.",
+                options:[
+                    {
+                        url:"/assets/images/black.png",
+                        text:"Черный"
+                
+                    },
+                    {
+                        url:"/assets/images/blue.png",
+                        text:"Синий"
+                
+                    },
+                    {
+                        url:"/assets/images/red.png",
+                        text:"Красный"
+                
+                    }
+                    ,
+                    {
+                        url:"/assets/images/green.png",
+                        text:"Зеленый"
+                
+                    }
+                ]
             },
             {
                 id:"3",
@@ -85,7 +135,32 @@
                 name:"Samurai KL-1.04 Темно-коричневый",
                 price:"23 000 ₽",
                 oldPrice:"27 000 ₽",
-                textBtn:"Добавить в корзину"
+                textBtn:"Добавить в корзину",
+                description:"Эргономичное офисное кресло с синхромеханизмом качания «MultiBlock» — раздельное синхронное отклонение спинки и сиденья кресла.",
+                mechanism:"Эргономичное офисное кресло с синхромеханизмом качания «MultiBlock» — раздельное синхронное.",
+                options:[
+                    {
+                        url:"/assets/images/black.png",
+                        text:"Черный"
+                
+                    },
+                    {
+                        url:"/assets/images/blue.png",
+                        text:"Синий"
+                
+                    },
+                    {
+                        url:"/assets/images/red.png",
+                        text:"Красный"
+                
+                    }
+                    ,
+                    {
+                        url:"/assets/images/green.png",
+                        text:"Зеленый"
+                
+                    }
+                ]
             },
             {
                 id:"4",
@@ -94,7 +169,32 @@
                 name:"Samurai KL-1.04 Темно-коричневый",
                 price:"23 000 ₽",
                 oldPrice:"27 000 ₽",
-                textBtn:"Добавить в корзину"
+                textBtn:"Добавить в корзину",
+                description:"Эргономичное офисное кресло с синхромеханизмом качания «MultiBlock» — раздельное синхронное отклонение спинки и сиденья кресла.",
+                mechanism:"Эргономичное офисное кресло с синхромеханизмом качания «MultiBlock» — раздельное синхронное.",
+                options:[
+                    {
+                        url:"/assets/images/black.png",
+                        text:"Черный"
+                
+                    },
+                    {
+                        url:"/assets/images/blue.png",
+                        text:"Синий"
+                
+                    },
+                    {
+                        url:"/assets/images/red.png",
+                        text:"Красный"
+                
+                    }
+                    ,
+                    {
+                        url:"/assets/images/green.png",
+                        text:"Зеленый"
+                
+                    }
+                ]
             },
             {
 
@@ -104,7 +204,32 @@
                 name:"Samurai KL-1.04 Темно-коричневый",
                 price:"23 000 ₽",
                 oldPrice:"27 000 ₽",
-                textBtn:"Добавить в корзину"
+                textBtn:"Добавить в корзину",
+                description:"Эргономичное офисное кресло с синхромеханизмом качания «MultiBlock» — раздельное синхронное отклонение спинки и сиденья кресла.",
+                mechanism:"Эргономичное офисное кресло с синхромеханизмом качания «MultiBlock» — раздельное синхронное.",
+                options:[
+                    {
+                        url:"/assets/images/black.png",
+                        text:"Черный"
+                
+                    },
+                    {
+                        url:"/assets/images/blue.png",
+                        text:"Синий"
+                
+                    },
+                    {
+                        url:"/assets/images/red.png",
+                        text:"Красный"
+                
+                    }
+                    ,
+                    {
+                        url:"/assets/images/green.png",
+                        text:"Зеленый"
+                
+                    }
+                ]
             },
              {
                 id:"6",
@@ -113,7 +238,32 @@
                 name:"Samurai KL-1.04 Темно-коричневый",
                 price:"23 000 ₽",
                 oldPrice:"27 000 ₽",
-                textBtn:"Добавить в корзину"
+                textBtn:"Добавить в корзину",
+                description:"Эргономичное офисное кресло с синхромеханизмом качания «MultiBlock» — раздельное синхронное отклонение спинки и сиденья кресла.",
+                mechanism:"Эргономичное офисное кресло с синхромеханизмом качания «MultiBlock» — раздельное синхронное.",
+                options:[
+                    {
+                        url:"/assets/images/black.png",
+                        text:"Черный"
+                
+                    },
+                    {
+                        url:"/assets/images/blue.png",
+                        text:"Синий"
+                
+                    },
+                    {
+                        url:"/assets/images/red.png",
+                        text:"Красный"
+                
+                    }
+                    ,
+                    {
+                        url:"/assets/images/green.png",
+                        text:"Зеленый"
+                
+                    }
+                ]
             }, 
             {
                 id:"7",
@@ -131,7 +281,32 @@
                 name:"Samurai KL-1.04 Темно-коричневый",
                 price:"23 000 ₽",
                 oldPrice:"27 000 ₽",
-                textBtn:"Добавить в корзину"
+                textBtn:"Добавить в корзину",
+                description:"Эргономичное офисное кресло с синхромеханизмом качания «MultiBlock» — раздельное синхронное отклонение спинки и сиденья кресла.",
+                mechanism:"Эргономичное офисное кресло с синхромеханизмом качания «MultiBlock» — раздельное синхронное.",
+                options:[
+                    {
+                        url:"/assets/images/black.png",
+                        text:"Черный"
+                
+                    },
+                    {
+                        url:"/assets/images/blue.png",
+                        text:"Синий"
+                
+                    },
+                    {
+                        url:"/assets/images/red.png",
+                        text:"Красный"
+                
+                    }
+                    ,
+                    {
+                        url:"/assets/images/green.png",
+                        text:"Зеленый"
+                
+                    }
+                ]
             }
         ],
         "ulCatalog":[

@@ -76,7 +76,6 @@ return ul
 
 //функция делает ul елементом
 const createUlElem  = (arr, perent, classNameUl, classNameLi, classNameLiA, route = false) =>{
-    console.log("arr => ", arr)
     if(route) {
         let ul = createElem("ul", perent, null, null, classNameUl)
         arr.forEach(el => {
@@ -94,8 +93,20 @@ const createUlElem  = (arr, perent, classNameUl, classNameLi, classNameLiA, rout
    
 }
 
+//функция ищет элемент в массиве
+const serchElem = (id,arr) =>{
+    for(let i =0; i <= arr.length; i++) {
+        if (arr[i]?.id){
+            if(arr[i].id = id){
+                return arr[i]
+            }
+        }
+    }
+    return null
+}
 
 
 
 
-export { createElem, createInput, createElemNew, createUl, createUlElem};
+
+export { createElem, createInput, createElemNew, createUl, createUlElem, serchElem};
