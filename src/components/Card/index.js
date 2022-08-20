@@ -8,12 +8,13 @@ const Card = (id) => {
    const arrArmchair = info.catalog.armchair;
    const armchair = serchElem(id, arrArmchair)
    const card = createElemNew("div", null, null, "card")
+   const ulCatalog = info.catalog.ulCatalog.slice(0, 2);
    const elemArr = {
    text:armchair.name,
    url:"#"
 }
-   info.catalog.ulCatalog.push(elemArr);
-   const arr = info.catalog.ulCatalog
+    ulCatalog.push(elemArr);
+   const arr = ulCatalog;
    createUlElem(arr, card, "linkLocation", "linkLocationLi", "linkLocationA", true)
    const blockCard = createElem("div",card, null, null, "blockCard")
    const blockCardImg = createElem("div", blockCard, null, null, "blockCardImg")

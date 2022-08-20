@@ -1,7 +1,9 @@
 import './style.scss'
 import info from '../../info.js'
-import { createElem, createElemNew } from "helper/helper.js";
+import { createElem, createElemNew,  memoryLoad} from "helper/helper.js";
 import {showCard} from "helper/route.js"
+
+
 
 const Catalog = (arr= null, arrArm, isFilter = null) => {
     const catalogBlock = createElemNew("div", null, null,"blockCatalog")
@@ -36,9 +38,17 @@ const Catalog = (arr= null, arrArm, isFilter = null) => {
             var elem = event.target;
             var check = elem.matches('.button');
             if(!check) {
-                showCard(elem.parentNode)
+                const idElem = showCard(elem.parentNode)
+                const test = {img:info.catalog.armchair[1].img,
+                    name: info.catalog.armchair[1].name ,
+                    price:info.catalog.armchair[1].price,
+                    oldPrice:info.catalog.armchair[1].oldPrice,
+                    count :1,
+                    id:idElem
+                 }
+                 memoryLoad("purchases", idElem, test )
             }
-            
+           
         })
         armchair.innerHTML = `
         <img src="${elem.img}" alt="img" class="img"> 

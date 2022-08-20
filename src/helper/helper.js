@@ -94,7 +94,6 @@ const createUlElem  = (arr, perent, classNameUl, classNameLi, classNameLiA, rout
 
 //функция ищет элемент в массиве
 const serchElem = (id,arr) =>{
-    console.log("arr",arr)
     for(let i =0; i <= arr.length; i++) {
         
         if (arr[i]?.id){
@@ -105,9 +104,38 @@ const serchElem = (id,arr) =>{
     }
     return null
 }
+//функция проверяет есть ли такое кресло в корзине
+const checkStor = (key, id) =>{
+    const purchases  = JSON.parse(sessionStorage.getItem(key))
+    if (!purchases) {
+        return ({res:true,
+            element:[]
+        })
+    }
+    for(let i =0; i<= purchases.length; i++){
+        console.log("rrrr",purchases[i])
+        if (purchases[i]?.id == id) {
+            return ({res:false,
+                element:purchases
+                })
+            }
+        }
+        return ({res:true,
+            element:purchases
+        }
+    )
+}
+
+//функция записывает данные в стор
+const memoryLoad = (key, id, elem) => {
+    let a =checkStor(key, id);
+   let {res, element} = checkStor(key, id);
+    if(res){
+        element.push(elem)
+        sessionStorage.setItem("purchases", JSON.stringify(element))
+    }
+}
 
 
 
-
-
-export { createElem, createInput, createElemNew, createUl, createUlElem, serchElem};
+export { createElem, createInput, createElemNew, createUl, createUlElem, serchElem, memoryLoad};

@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Inter';
+    src: url("/src/fonts/Inter-Regular.ttf");
+}
+@font-face {
+    font-family: 'Inter';
+    src: url("/src/fonts/Inter-Bold.ttf");
+}
+
+.basketNull{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.basket{
+    width: 1140px;
+    margin: 0 auto;
+    .orderBlock{
+        padding-left: 0;
+    }
+    .allSummBlockOldPrice{
+        position: relative;
+    }
+    .priceOldLine{
+        position: absolute;
+        top: 15px;
+    }
+}
+
+.allSummBlock{
+    display: flex;
+    justify-content: flex-end;
+    width: 850px;
+}
+    .allSummBlockSpan{
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 140%;
+        letter-spacing: -0.05em;
+        color: #2B3350;
+        margin-right: 5px;
+}

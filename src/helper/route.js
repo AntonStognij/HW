@@ -13,6 +13,7 @@ const showCard = (elem) =>{
     let main = document.querySelector(".main")
     main.innerHTML = ""
     main.append(CardPage(id))
+    return id
 }
 
 export {showCatalog, showCard}
