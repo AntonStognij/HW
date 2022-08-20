@@ -40,7 +40,49 @@ ulCatalog.push(elemArr);
     createElem ("span", allSummBlockOldPrice, null, `${allSummOld}`, "allSummBlockSpan")
     createElem("img", allSummBlockOldPrice, img, null, "priceOldLine")
     createElem ("span", allSummBlock, null, `${allSumm}`, "allSummBlockSpan")
- } else {
+    let infoForPay = createElem ("div", basket, null, null, "infoForPay")
+    createElem ("h4", infoForPay, null, "Ваши данные", "infoForPayh4")
+    let infoText = "Заполните все обязательные поля, чтобы мы смогли с вами связаться для уточнения заказа";
+    createElem ("p", infoForPay, null, infoText, "infoForPayP")
+    let formInfo =  createElem ("form", infoForPay, null, null, "blockFormInfo")
+    formInfo.innerHTML = `
+    <div class = "blockName">
+    <input type="text" class = "formInfo">
+    <div class = "LebelInputName">Ваше имя</div>
+    </div>
+    <input type="text" class = "formInfo"  placeholder="Электронная почта (не обязательно)">
+    <input type="text" class = "formInfo"  placeholder="Телефон">
+    `
+    let infoAdr = createElem ("div", basket, null, null, "infoForPay infoAdr")
+    createElem ("h4", infoAdr, null, "Доставка", "infoForPayh4")
+    let inputInfoAdr =  createElem ("form", infoAdr, null, null, "inputInfoAdr")
+    inputInfoAdr.innerHTML = `
+    <div class = "formInfo select"><input name="selectInput" type="radio" value="varOne"> <div><h5 class = "selecth4">Самовывоз</h5> <p class = "textSelect">Краснобогатырская , д. 6 строение 5 - БЦ «ВИЛЛА-РИВА»</p></div> </div>
+    <div class = "formInfo select"><input name="selectInput" type="radio" value="varOne"> <div><h5 class = "selecth4">Доставка курьером</h5> <p class = "textSelect">Стоимость — 750 рублей, от 3 дней</p></div> </div>
+    <div class = "formInfo select"><input name="selectInput" type="radio" value="varOne"> <div><h5 class = "selecth4">Транспортной компании</h5> <p class = "textSelect">По всей стране, услуги ТК оплачиваются отдельно при получении</p></div> </div>
+    `
+    createElem ("h4", infoAdr, null, "Адрес доставки", "infoForPayh4")
+    let infoTextblockTwo = "Уточните только город доставки. Остальные детали мы уточним по телефону";
+    createElem ("p", infoAdr, null, infoTextblockTwo, "infoForPayP")
+    let formInfoBlockTwo =  createElem ("form", infoAdr, null, null, "blockFormInfo")
+    formInfoBlockTwo.innerHTML = `
+    <input type="text" class = "formInfo"  placeholder="Город">
+    `
+    let infoPay = createElem ("div", basket, null, null, "infoForPay infoAdr infoPay")
+    createElem ("h4", infoPay, null, "Оплата", "infoForPayh4")
+    let inputInfoPay  =  createElem ("form", infoPay, null, null, "inputInfoPay")
+    inputInfoPay.innerHTML = `
+    <div class = "formInfo select"><input name="selectPay" type="radio" value="varOne"> <p class = "textSelect">Безналичный расчет для юр.лиц (счет на оплату)</p></div> 
+    <div class = "formInfo select"><input name="selectPay" type="radio" value="varOne"> <p class = "textSelect">Оплата наличными</p></div> 
+    <div class = "formInfo select"><input name="selectPay" type="radio" value="varOne"> <p class = "textSelect">Оплата Банковской картой (VISA, MasterCard, Maestro) без комиссии при доставке через платежный терминал</p></div> 
+    `
+    let btnPay = createElem ("div", basket, null, null, "BlockbtnPay")
+    let textPay =`Нажимая «Оформить заказ», вы даете согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности.`
+    createElem ("button", btnPay, null, "Оформить заказ", "btnPay")
+    createElem ("p", btnPay, null, textPay, "BlockbtnPayText")
+ 
+ 
+   } else {
     createElem ("h2", basket, null, "Ваша корзина пуста", "basketNull")
  }
  

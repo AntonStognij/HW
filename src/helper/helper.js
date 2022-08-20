@@ -50,19 +50,19 @@ const createElemNew = (tag, src = null, text = null, className = null, dataAtr=n
     return elem
 }
 //функция делает поле для ввода
-const createInput  = (labelText=null, id=null, perent) =>{
-    let form = document.createElement("form")
-    form.setAttribute("id", `formElem`)
-    let input = document.createElement("input")
-    let label = document.createElement("label")
-    perent.append(form)
-    let formElem = document.getElementById("formElem")
-    input.setAttribute("type", `text`)
-    input.setAttribute("id", `input`)
-    input.setAttribute("placeholder", `Название модели или артикул`)
-    formElem.append(label)
-    formElem.append(input)
-}
+// const createInput  = (perent, tyoe, labelText=null, id=null, ) =>{
+//     let form = document.createElement("form")
+//     form.setAttribute("id", `${id}`)
+//     let input = document.createElement("input")
+//     let label = document.createElement("label")
+//     perent.append(form)
+//     let formElem = document.getElementById("formElem")
+//     input.setAttribute("type", `text`)
+//     input.setAttribute("id", `input`)
+//     input.setAttribute("placeholder", `Название модели или артикул`)
+//     formElem.append(label)
+//     formElem.append(input)
+// }
 
 const createUl  = (arr, classNameUl, classNameLi, classNameLiA) =>{
     let li = ""
@@ -138,4 +138,4 @@ const memoryLoad = (key, id, elem) => {
 
 
 
-export { createElem, createInput, createElemNew, createUl, createUlElem, serchElem, memoryLoad};
+export { createElem, createElemNew, createUl, createUlElem, serchElem, memoryLoad};
