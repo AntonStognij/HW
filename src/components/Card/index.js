@@ -2,8 +2,6 @@ import './style.scss'
 import info from '../../info.js'
 import { createElem, createElemNew, createUlElem, serchElem } from "helper/helper.js";
 
-//const createElemNew = (tag, src = null, text = null, className = null, dataAtr=null, href = null)
-//createElem = (tag, append, src = null, text = null, className = null, dataAtr=null, href = null)
 const Card = (id) => {
    const arrArmchair = info.catalog.armchair;
    const armchair = serchElem(id, arrArmchair)
@@ -35,6 +33,7 @@ const Card = (id) => {
    createElem("span", blockoldPrice, null, armchair.price, "oldPrice")
    createElem("span", blockCardDeskription, null, armchair.oldPrice, "Price")
    const blocOptBtn = createElem("div", blockCardDeskription, null, null, "blocOptBtn")
+   blocOptBtn.setAttribute("data-id", id);
    createElem("button", blocOptBtn, null,"Добавить в корзину", "button btnCard")
    const blocOptBtnTwo = createElem("div", blocOptBtn, null, null, "blocOptBtnTwo")
    createElem("button", blocOptBtnTwo, null,"-", "buttonІubtract")

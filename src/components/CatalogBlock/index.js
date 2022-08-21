@@ -38,15 +38,7 @@ const Catalog = (arr= null, arrArm, isFilter = null) => {
             var elem = event.target;
             var check = elem.matches('.button');
             if(!check) {
-                const idElem = showCard(elem.parentNode)
-                const test = {img:info.catalog.armchair[1].img,
-                    name: info.catalog.armchair[1].name ,
-                    price:info.catalog.armchair[1].price,
-                    oldPrice:info.catalog.armchair[1].oldPrice,
-                    count :1,
-                    id:idElem
-                 }
-                 memoryLoad("purchases", idElem, test )
+                showCard(elem.parentNode)
             }
            
         })
@@ -59,6 +51,25 @@ const Catalog = (arr= null, arrArm, isFilter = null) => {
         <button class="button">${elem.textBtn}</button> 
         `   
     });
+    window.addEventListener("click", function(event){
+        var elem = event.target;
+        var check = elem.matches('.button');
+        if(check) {
+            const parent = elem.parentNode
+            const id = parent.getAttribute("data-id")-1
+            console.log("test",info.catalog.armchair[id])
+            const recording = {
+                img:info.catalog.armchair[id].img,
+                name: info.catalog.armchair[id].name ,
+                price:info.catalog.armchair[id].price,
+                oldPrice:info.catalog.armchair[id].oldPrice,
+                count :1,
+                id:id
+             }
+            memoryLoad("purchases", id, recording )
+        }
+       
+    })
         createElem("button", catalogBlock, null, "Показать все", "buttonShowAll")
         return catalogBlock
 }

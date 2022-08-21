@@ -25,7 +25,7 @@ ulCatalog.push(elemArr);
     let allSummOld = 0
     purchases.forEach(element => {
        console.log(element)
-       basket.append(Order(element.img, element.name, element.price , element.oldPrice, element.count))
+       basket.append(Order(element.img, element.name, element.price , element.oldPrice, element.count, element.id))
        element.price = element.price.slice(0, -2)
        element.price = +element.price.replace(/\s/g,'')
        element.oldPrice = element.oldPrice.slice(0, -2)
