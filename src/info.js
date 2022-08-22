@@ -1,22 +1,49 @@
 
     const info = {
-        "arrLeft" : ["О продукте", "Отзывы", "Доставка и оплата", "Контакты"],
-        "arrRight": [`<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M18.3337 1.6665L9.16699 10.8332" stroke="#2B3350" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M18.3337 1.6665L12.5003 18.3332L9.16699 10.8332L1.66699 7.49984L18.3337 1.6665Z" stroke="#2B3350" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>  <span class = "textLeftElem"> Москва </span> `, `<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <g clip-path="url(#clip0_68_408)">
-    <path d="M7.50032 18.3334C7.96056 18.3334 8.33365 17.9603 8.33365 17.5001C8.33365 17.0398 7.96056 16.6667 7.50032 16.6667C7.04009 16.6667 6.66699 17.0398 6.66699 17.5001C6.66699 17.9603 7.04009 18.3334 7.50032 18.3334Z" stroke="#2B3350" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M16.6663 18.3334C17.1266 18.3334 17.4997 17.9603 17.4997 17.5001C17.4997 17.0398 17.1266 16.6667 16.6663 16.6667C16.2061 16.6667 15.833 17.0398 15.833 17.5001C15.833 17.9603 16.2061 18.3334 16.6663 18.3334Z" stroke="#2B3350" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M0.833008 0.833252H4.16634L6.39967 11.9916C6.47588 12.3752 6.6846 12.7199 6.9893 12.9652C7.29399 13.2105 7.67525 13.3407 8.06634 13.3333H16.1663C16.5574 13.3407 16.9387 13.2105 17.2434 12.9652C17.5481 12.7199 17.7568 12.3752 17.833 11.9916L19.1663 4.99992H4.99967" stroke="#2B3350" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    </g>
-    <defs>
-    <clipPath id="clip0_68_408">
-    <rect width="20" height="20" fill="white"/>
-    </clipPath>
-    </defs>
-    </svg> <span class = "textLeftElem"> Моя корзина </span> <div class= "purchases">+1</div>
-    `],
+        "arrLeft" : [{
+            elem: "О продукте", 
+            url:"#"
+        },
+        {
+            elem:   "Отзывы",
+            url:"#",
+
+        },
+        {
+            elem:   "Доставка и оплата",
+            url:"#",
+            
+        },
+        {
+            elem:   "Контакты",
+            url:"#",
+            
+        }],
+        "arrRight": [
+            {elem: `<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.3337 1.6665L9.16699 10.8332" stroke="#2B3350" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M18.3337 1.6665L12.5003 18.3332L9.16699 10.8332L1.66699 7.49984L18.3337 1.6665Z" stroke="#2B3350" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>  Москва `,
+            url:"#"
+        }, 
+        {
+            elem:   `<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_68_408)">
+            <path d="M7.50032 18.3334C7.96056 18.3334 8.33365 17.9603 8.33365 17.5001C8.33365 17.0398 7.96056 16.6667 7.50032 16.6667C7.04009 16.6667 6.66699 17.0398 6.66699 17.5001C6.66699 17.9603 7.04009 18.3334 7.50032 18.3334Z" stroke="#2B3350" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M16.6663 18.3334C17.1266 18.3334 17.4997 17.9603 17.4997 17.5001C17.4997 17.0398 17.1266 16.6667 16.6663 16.6667C16.2061 16.6667 15.833 17.0398 15.833 17.5001C15.833 17.9603 16.2061 18.3334 16.6663 18.3334Z" stroke="#2B3350" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M0.833008 0.833252H4.16634L6.39967 11.9916C6.47588 12.3752 6.6846 12.7199 6.9893 12.9652C7.29399 13.2105 7.67525 13.3407 8.06634 13.3333H16.1663C16.5574 13.3407 16.9387 13.2105 17.2434 12.9652C17.5481 12.7199 17.7568 12.3752 17.833 11.9916L19.1663 4.99992H4.99967" stroke="#2B3350" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_68_408">
+            <rect width="20" height="20" fill="white"/>
+            </clipPath>
+            </defs>
+            </svg> Моя корзина <div class= "purchases">+1</div>` ,
+            url:`/basket`
+        }
+    
+ ]
+    ,
     "textLogo" : 'Кресла Samurai',
     "textButton" : 'Заказать звонок',
     "tel": `+7 495 221-06-75`,

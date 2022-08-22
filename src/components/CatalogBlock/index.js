@@ -1,6 +1,6 @@
 import './style.scss'
 import info from '../../info.js'
-import { createElem, createElemNew,  memoryLoad} from "helper/helper.js";
+import { createElem, createElemNew,  memoryLoad, showCount} from "helper/helper.js";
 import {showCard} from "helper/route.js"
 
 
@@ -57,7 +57,6 @@ const Catalog = (arr= null, arrArm, isFilter = null) => {
         if(check) {
             const parent = elem.parentNode
             const id = parent.getAttribute("data-id")-1
-            console.log("test",info.catalog.armchair[id])
             const recording = {
                 img:info.catalog.armchair[id].img,
                 name: info.catalog.armchair[id].name ,
@@ -67,6 +66,7 @@ const Catalog = (arr= null, arrArm, isFilter = null) => {
                 id:id
              }
             memoryLoad("purchases", id, recording )
+            showCount()
         }
        
     })

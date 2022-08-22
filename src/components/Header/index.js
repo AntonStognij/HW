@@ -1,6 +1,8 @@
 import './style.scss'
 import info from '../../info.js'
 import { createElem, createUl, createElemNew } from "helper/helper.js";
+
+
 const Heder = () => {
     const blockHederElem = createElemNew('header', null, null, "heder")
     let blockInHederElem = createElem ('div', blockHederElem, null, null, "blockHeder")
@@ -47,7 +49,7 @@ blockInHederElem.innerHTML = `
 <button class="button">${info.textButton}</button> 
 </div>`
 
-    return blockHederElem
+return blockHederElem
  }
 
 export default Heder

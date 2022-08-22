@@ -49,29 +49,51 @@ const createElemNew = (tag, src = null, text = null, className = null, dataAtr=n
     }
     return elem
 }
-//функция делает поле для ввода
-// const createInput  = (perent, tyoe, labelText=null, id=null, ) =>{
-//     let form = document.createElement("form")
-//     form.setAttribute("id", `${id}`)
-//     let input = document.createElement("input")
-//     let label = document.createElement("label")
-//     perent.append(form)
-//     let formElem = document.getElementById("formElem")
-//     input.setAttribute("type", `text`)
-//     input.setAttribute("id", `input`)
-//     input.setAttribute("placeholder", `Название модели или артикул`)
-//     formElem.append(label)
-//     formElem.append(input)
-// }
 
 const createUl  = (arr, classNameUl, classNameLi, classNameLiA) =>{
     let li = ""
 arr.forEach(element => {
-    let a = `<a href="#" class="${classNameLiA}">${element}</a>`
+    let a = `<a href="${element.url}" class="${classNameLiA}">${element.elem}</a>`
     li = li + `<li class ="${classNameLi}">${a}</li>`
 });
 let ul = `<ul class = "${classNameUl}">${li}</ul>`
 return ul
+}
+
+const showCount = ()=> {
+    let elem = document.querySelector(".purchases")
+    const purchases  = JSON.parse(sessionStorage.getItem("purchases"))
+    if (purchases){
+        if (purchases.length > 0) {
+            elem.style.display = "block"
+            elem.innerHTML = purchases.length
+        }
+    }
+     else {
+        elem.style.display = "none"
+    }
+}
+
+const updateSumm =()=>{
+    const purchases  = JSON.parse(sessionStorage.getItem("purchases"))
+    let allSumm = 0;
+    let allSummOld = 0
+    purchases.forEach(element => {
+        element.price = element.price.slice(0, -2)
+        element.price = +element.price.replace(/\s/g,'')
+        element.oldPrice = element.oldPrice.slice(0, -2)
+        element.oldPrice = +element.oldPrice.replace(/\s/g,'')
+        allSumm=allSumm+(element.price*element.count);
+        allSummOld = allSummOld+(element.oldPrice*element.count);
+})
+let allElemSum = document.querySelectorAll(".allSummBlockSpan")
+allElemSum.forEach(element => {
+    element.innerHTML = ''
+});
+let allSummBlockSpan = document.querySelector(".allSummBlockSpan")
+allSummBlockSpan.innerHTML = `Итого: ${allSumm}`
+let allSummBlockSpanOld = document.querySelector(".allSummBlockSpanOld")
+allSummBlockSpanOld.innerHTML = allSummOld
 }
 
 //функция делает ul елементом
@@ -138,4 +160,4 @@ const memoryLoad = (key, id, elem) => {
 
 
 
-export { createElem, createElemNew, createUl, createUlElem, serchElem, memoryLoad};
+export { createElem, createElemNew, createUl, createUlElem, serchElem, memoryLoad, showCount, updateSumm};

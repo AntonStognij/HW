@@ -1,6 +1,7 @@
 import './style.scss'
 import info from '../../info.js'
-import { createElem , createElemNew, memoryLoad} from "helper/helper.js";
+import { createElem , createElemNew, showCount, updateSumm} from "helper/helper.js";
+
 
 const Order = ( img, nameArm, price, oldPrice, count, id) => {
 
@@ -38,13 +39,20 @@ buttonDel.addEventListener("click", function(event){
     if(check||checkTwo){
        let id = orderBlock.getAttribute("data-id")
         orderBlock.innerHTML= "";
-        console.log(id);
         const purchases  = JSON.parse(sessionStorage.getItem("purchases"))
         let newPurchases = purchases.filter(function(el) {
            return el.id != id-1
         })
-        console.log("newPurchases =>",newPurchases, "id =>", id)
-        sessionStorage.setItem("purchases", JSON.stringify(newPurchases))
+        if(newPurchases.length >0){
+            sessionStorage.setItem("purchases", JSON.stringify(newPurchases))
+            
+        } else {
+            sessionStorage.clear()
+            const elem = document.querySelector(".basket");
+            elem.innerHTML = `<h2 class="basketNull">Ваша корзина пуста</h2>`
+        }
+        showCount()
+        updateSumm()
     }
 })
 return orderBlock
